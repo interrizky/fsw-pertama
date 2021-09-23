@@ -193,6 +193,45 @@
         </div>
       </div>
     </div>
+
+      <script type="text/javascript">
+      //jika b + a bukan 32, looping b - else print boolean    
+
+      //satu
+      var a = 5;
+      var b = 32;
+      if ((b+a)!=32) {
+        for(a; (b+a)!= 32; b--) {
+          console.log(b);
+        }
+      } else {
+        console.log(false);
+      }
+
+      //dua
+      var a = 5;
+      var b = 32;
+      if((b+a)!=32){
+        while((b+a) != 32){
+          console.log(b);
+          b--;
+        } 
+      } else {
+        console.log(false);
+      }
+
+      //tiga
+      var a = 5;
+      var b = 32;
+      if((b+a)!=32){
+        do{
+          console.log(b);
+          b--;
+        } while((b+a) != 32);
+      } else {
+        console.log(false);
+      }
+    </script>
     
   </body>
 </html>
