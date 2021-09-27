@@ -373,7 +373,7 @@
       }
 
       // panggil method kondisi satu
-      ( (a.length + b.length) != 32 ) ? printText(a,b) : console.log("Panjang Dua Array Tidak Boleh Sama Dengan 32");
+      // ( (a.length + b.length) != 32 ) ? printText(a,b) : console.log("Panjang Dua Array Tidak Boleh Sama Dengan 32");
       
       // KONDISI DUA
       const modulo = function(x){
@@ -396,7 +396,7 @@
           }          
       }
       // panggil method kondisi dua
-      ( (a.length + b.length) != 32 ) ? printArrayLagi() : console.log("Something is not right");
+      // ( (a.length + b.length) != 32 ) ? printArrayLagi() : console.log("Something is not right");
       
       // KONDISI TIGA
       let gabungan = "";
@@ -406,7 +406,67 @@
         gabungan.forEach(indeks => console.log(indeks));
       }
       // panggil method kondisi tiga
-      (gabungan.length != 32) ? printGabungan() : console.log(false);
+      // (gabungan.length != 32) ? printGabungan() : console.log(false);
+
+      /* PENGAYAAN TEXT LOOPING */
+    
+      /* CONVERT OBJECT TO ARRAY */
+      // let data = {
+      //   name: 'nama', // string
+      //   kelas: 12, // number / integer
+      //   sekolah: 'smp mana aja',
+      //   address: 'depok',
+      //   umur: 17,
+      // }
+
+      // const keyAja = Object.keys(data);
+      // console.log(keyAja);
+
+      // const nilaiAja = Object.values(data);
+      // console.log(nilaiAja);
+
+      // const entries = Object.entries(data);
+      // console.log(entries);
+
+      /* CONVERT OBJ */
+      let datax = [
+      {"name":"dila","kelas":12,"sekolah":"smp mana aja","address":"depok","umur":16},
+      {"name":"bila","kelas":12,"sekolah":"smp mana aja","address":"depok","umur":16},
+      {"name":"tina","kelas":12,"sekolah":"smp mana aja","address":"depok","umur":17},
+      {"name":"kila","kelas":12,"sekolah":"smp mana aja","address":"depok","umur":16},
+      {"name":"rila","kelas":12,"sekolah":"smp mana aja","address":"depok","umur":17}]      
+
+      /* convert array to object */
+      // const obj = Object.assign({}, datax);
+      // console.log(obj);
+
+      /* convert object to array */
+      // var result = Object.keys(obj).map((key) => [Number(key), obj[key]]);
+      // const entries = Object.entries(obj);
+      // console.log(entries); 
+      // const nilaiAja = Object.values(obj);
+      // console.log(nilaiAja); 
+
+      for(let i = 0; i < datax.length; i++)
+      {
+        // console.log( result[i] );
+        // console.log( entries[i] );
+        /* task 1 */
+        // console.log( datax[i] );
+        /* task 2 */
+        /* cara 1 */
+        // console.log( datax[i].name );
+        // console.log( datax[i].kelas );
+        // console.log( datax[i].sekolah );
+        // console.log( datax[i].address );
+        // console.log( datax[i].umur );
+        /* cara 2 */
+        for(let j in datax[i])
+        {
+          console.log( datax[i][j]);
+        }
+        /* cara 3 - pake MAP */
+      }
     </script>
     
   </body>
