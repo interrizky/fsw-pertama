@@ -409,7 +409,19 @@
       // (gabungan.length != 32) ? printGabungan() : console.log(false);
 
       /* PENGAYAAN TEXT LOOPING */
-    
+      function printKaliTigasan(params)
+      {
+        const text = [];
+        for (let i = 0; i < 3; i++)
+        {
+          text[i] = params;
+        }
+        //text.forEach(indeks => console.log(indeks));
+        let tigakali = text.join("");
+        console.log(tigakali);
+      }
+      // printKaliTigasan("Binar")      
+          
       /* CONVERT OBJECT TO ARRAY */
       // let data = {
       //   name: 'nama', // string
@@ -461,10 +473,10 @@
         // console.log( datax[i].address );
         // console.log( datax[i].umur );
         /* cara 2 */
-        for(let j in datax[i])
-        {
-          console.log( datax[i][j]);
-        }
+        // for(let j in datax[i])
+        // {
+        //   console.log( datax[i][j]);
+        // }
         /* cara 3 - pake MAP */
       }
     </script>
