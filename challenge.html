@@ -296,8 +296,8 @@
       // - print the array of sum array a + array b
       // else print boolean
 
-      // let a = [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ];
-      // let b = [ 200, 300, 21, 'dari', 'indonesia' ];
+      let a = [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ];
+      let b = [ 200, 300, 21, 'dari', 'indonesia' ];
 
       // KONDISI SATU
       // if( (a.length + b.length) != 32 )
@@ -353,6 +353,60 @@
       //     console.log(false);
       // }
 
+      /* PENERAPAN FUNCTION */
+      // let a = [ 3, 100, 283, 'saya', 'adalah', 'kapiten', 75 ];
+      // let b = [ 200, 300, 21, 'dari', 'indonesia' ];
+
+      // KONDISI SATU
+      function textAja(text)
+      {
+          if( typeof(text) === 'string') 
+          {
+            console.log(text);
+          }
+      }
+
+      function printText(x, y)
+      {
+        for(let i = 0; i < x.length ; i++) { textAja( a[i] ); }
+        for(let z = 0; z < y.length ; z++) { textAja( b[z] ); }          
+      }
+
+      // panggil method kondisi satu
+      ( (a.length + b.length) != 32 ) ? printText(a,b) : console.log("Panjang Dua Array Tidak Boleh Sama Dengan 32");
+      
+      // KONDISI DUA
+      const modulo = function(x){
+        if( x%2 == 1 )
+        {
+          return x;
+        } 
+      };
+
+      function printArrayLagi()
+      {
+          for(let i = 0; i < a.length ; i++)
+          {
+            if( modulo(i) ) { console.log(a[i]); }            
+          }
+
+          for(let y = 0; y < b.length ; y++)
+          {
+            if( modulo(y) ) { console.log(b[y]); }            
+          }          
+      }
+      // panggil method kondisi dua
+      ( (a.length + b.length) != 32 ) ? printArrayLagi() : console.log("Something is not right");
+      
+      // KONDISI TIGA
+      let gabungan = "";
+      function printArray()
+      {
+        gabungan = a.concat(b);        
+        gabungan.forEach(indeks => console.log(indeks));
+      }
+      // panggil method kondisi tiga
+      (gabungan.length != 32) ? printArray() : console.log(false);
     </script>
     
   </body>
