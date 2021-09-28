@@ -7,14 +7,16 @@
     <title>Studying</title>
     <!-- bootstrap -->
     <!-- CSS only -->
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.css"
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.css"
     />
     <link rel="stylesheet" href="./assets/css/style_challenge.css" />
   </head>
 
   <body>
     <!-- setiap body ada pembungkus atau wrapper, biasanya dibungkus pake tag <div> -->
-<!--     <div id="navbar">
+    <!--     <div id="navbar">
       <div class="logo">
         <a class="a-style-navbar" href="challenge.html">Logo</a>
       </div>
@@ -28,10 +30,11 @@
     </div> -->
 
     <div class="container-fluid">
-
       <div class="row navbar" id="navbar">
         <div class="col-6 logo-banner">
-          <a style="margin-left: 25px; font-size: 25px; font-weight: bold">LOGO</a>
+          <a style="margin-left: 25px; font-size: 25px; font-weight: bold"
+            >LOGO</a
+          >
         </div>
         <div class="col-6 menu-banner">
           <ul class="wrapper-menu-navbar">
@@ -41,52 +44,53 @@
             <li>
               <a class="a-style-navbar-x">Article</a>
             </li>
-            <button type="button" class="btn btn-outline-light" style="font-size: 24px;">Subscribe</button>       
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              style="font-size: 24px"
+            >
+              Subscribe
+            </button>
           </ul>
         </div>
       </div>
 
-
       <div class="row banner">
-        <div class="col-12 wrapper-banner" style="background-image: url(./assets/images/banner.jpg);">
+        <div
+          class="col-12 wrapper-banner image-banner"
+          style="background-image: url(./assets/images/banner.jpg)"
+        >
           <!-- <img src="./assets/images/jumbotron.jpeg"  class="w-100"></img> -->
           <!-- <img src="./assets/images/banner.jpg"></img> -->
           <div class="wrapper-text-banner">
             <h2 class="title-h2-banner hero-judul">ART OF PLANT</h2>
-            <p class="description-p-banner hero-subjudul">ALL ABOUT ART OF NATURE</p>
+            <p class="description-p-banner hero-subjudul">
+              ALL ABOUT ART OF NATURE
+            </p>
           </div>
         </div>
       </div>
 
       <div class="row product" id="product-list">
         <div class="col-12 title-box">
-          <h3 class="text-center" style="font-size: 18px;">LATEST ARTICLES</h3>
-          <hr class="new5">
+          <h3 class="text-center" style="font-size: 18px">LATEST ARTICLES</h3>
+          <hr class="new5" />
         </div>
-        <br/>
-        <br/>
-        <div class="col-12 card-deck">
-
-        </div> 
+        <br />
+        <br />
+        <div class="col-12 card-deck"></div>
       </div>
 
       <div class="row product-details">
-        <div class="box-left col-12 col-sm-12 col-md-6 col-lg-6 p-0">
-          <img src="./assets/images/product-detail.jpg" class="w-100 h-100"></img>
-        </div>
+        <div class="box-left col-12 col-sm-12 col-md-6 col-lg-6 p-0"></div>
 
         <div class="box-right col-12 col-sm-12 col-md-6 col-lg-6 d-flex">
-          <div class="wrapper-desc-details">
-            <h5 class="text-center">ABOUT</h5>
-            <hr class="new4">         
-            <br/>   
-            <p style="font-style:italic;text-align:justify;text-justify:inter-word;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>          
-          </div>
-        </div>        
+          <div class="wrapper-desc-details"></div>
+        </div>
       </div>
 
       <div class="row subscription">
-      <!--       <div class="col-1"></div>
+        <!--       <div class="col-1"></div>
         <div class="col-10 d-flex justify-content-center align-items-center">
           <div class="wrapper-box-subscription">
             <div class="col-12 subscription-title">
@@ -113,16 +117,24 @@
             </div>
             <div class="col-12 sub-title">
               <h5 class="text-center">Sign up to our newsletters</h5>
-            </div>        
-            <div class="row form-group">
-              <input type="email" class="form-control w-100" id="exampleInputEmailexampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                      
             </div>
-            <div class="col-12 form-group text-center" style="padding-top: 5%;">
-              <button type="button" class="btn btn-outline-secondary w-50">Submit</button>
-            </div>                
-          </div>      
+            <div class="row form-group">
+              <input
+                type="email"
+                class="form-control w-100"
+                id="exampleInputEmailexampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="col-12 form-group text-center" style="padding-top: 5%">
+              <button type="button" class="btn btn-outline-secondary w-50">
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-      </div>    
+      </div>
 
       <div class="row footer">
         <div class="col-12 menu-footer">
@@ -137,7 +149,9 @@
 
     <script type="text/javascript">
       let h2Banner = document.getElementsByClassName('title-h2-banner')
-      let desc = document.querySelector('.description-p-banner');
+      let desc = document.querySelector('.description-p-banner')
+      let imageBaru = document.querySelector('.banner .image-banner')
+      // document.body.style.backgroundImage = "url('img_tree.png')";
 
       //query selector
       //# untuk id
@@ -151,33 +165,18 @@
       //.style >> untuk css styling
       //.style.backgroundColor | property css = untuk merubah sesuai dengan properti CSS
 
-      h2Banner[0].innerHTML = 'ini isi';
-      h2Banner[0].style.fontFamily = 'Arial';  
-
+      h2Banner[0].innerHTML = 'ini isi'
+      h2Banner[0].style.fontFamily = 'Arial'
       // console.log(desc);
-      desc.innerHTML = 'Lorem Ipsum';
-
-      // let productList = `
-      // <div class="col-4 shadow-lg mb-5 bg-white rounded card">
-      //   <img class="card-img-top" src="./assets/images/product-3.jpg" alt="Card image cap">
-      //   <br/>
-      //   <br/>
-      //   <div class="card-body">
-      //     <hr class="new3">
-      //     <br/>
-      //     <h5 class="card-title">Card title</h5>
-      //     <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      //   </div>
-      // </div> `
+      desc.innerHTML = 'Lorem Ipsum'
+      imageBaru.style.backgroundImage = "url('./assets/images/KB_Bukopin.jpeg')"
 
       let productBox = document.querySelector('#product-list .card-deck')
       // productBox.innerHTML = productList;
 
-      for (let i = 0; i < 3; i++) 
-      {
-        if( i%2 == 0 ){
-          productBox.innerHTML += 
-          `
+      for (let i = 0; i < 3; i++) {
+        if (i % 2 == 0) {
+          productBox.innerHTML += `
             <div class="col-4 shadow-lg mb-5 bg-white rounded card">
               <img class="card-img-top" src="./assets/images/product-3.jpg" alt="Card image cap">
               <br/>
@@ -189,10 +188,9 @@
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
             </div> 
-          `;
-        } else {
-          productBox.innerHTML += 
           `
+        } else {
+          productBox.innerHTML += `
             <div class="col-4 shadow-lg mb-5 bg-white rounded card">
               <img class="card-img-top" src="./assets/images/product-3.jpg" alt="Card image cap">
               <br/>
@@ -204,12 +202,40 @@
                 <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
             </div> 
-          `;
+          `
         }
 
+        let productImageDetails = document.querySelector(
+          '.product-details .box-left'
+        )
+        productImageDetails.innerHTML = `<img src="./assets/images/product-detail.jpg" class="w-100 h-100"></img>`
+        let productDescDetails = document.querySelector(
+          '.product-details .box-right .wrapper-desc-details'
+        )
+        productDescDetails.innerHTML = `   
+          <h5 class="text-center">ABOUT</h5>
+          <hr class="new4" />
+          <br />
+          <p
+            style="
+              font-style: italic;
+              text-align: justify;
+              text-justify: inter-word;
+            "
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.
+          </p>
+        `
       }
-
     </script>
-    
   </body>
 </html>
